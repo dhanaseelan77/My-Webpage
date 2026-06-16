@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML List Tags Example</title>
+</head>
+<body>
+
+    <h1>1. Courses List (Ordered List)</h1>
+
+    <ol>
+        <li>Frontend Development
+            <ul>
+                <li>HTML Basics</li>
+                <li>CSS Styling</li>
+                <li>JavaScript Basics</li>
+            </ul>
+        </li>
+
+        <li>Backend Development
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Database (MongoDB)</li>
+            </ul>
+        </li>
+
+        <li>Design Tools
+            <ul>
+                <li>Photoshop</li>
+                <li>Figma</li>
+                <li>Canva</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h1>2. Technologies (Unordered List)</h1>
+
+    <ul>
+        <li>Web Development
+            <ol>
+                <li>HTML Structure</li>
+                <li>CSS Styling</li>
+                <li>JavaScript Logic</li>
+            </ol>
+        </li>
+
+        <li>Mobile Development
+            <ol>
+                <li>Android</li>
+                <li>Flutter</li>
+                <li>React Native</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>3. Description List Example</h1>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Used to create structure of web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Used to design and style web pages</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Used to add interactivity to web pages</dd>
+    </dl>
+
+    <hr>
+
+    <h1>4. Full Nested Mixed Example</h1>
+
+    <ol>
+        <li>Programming Languages
+            <ul>
+                <li>Frontend
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+
+                <li>Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>Tools</li>
+
+        <dl>
+            <dt>Git</dt>
+            <dd>Version control system</dd>
+
+            <dt>VS Code</dt>
+            <dd>Code editor for development</dd>
+        </dl>
+    </ol>
+
+</body>
+</html>
