@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">Introduction</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hello World!</h1>
+        <p>Welcome to my Personal Webpage.</p>
+    </section>
+
+    <hr>
+
+    <!-- Self Introduction -->
+    <section id="about">
+        <h2>Self Introduction</h2>
+        <p>
+            My name is <b>Dhanaseelan P</b>. I am a student interested in
+            Web Development, Programming, and Technology.
+            I enjoy learning new skills and creating projects.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills List</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>Hobbies List</h2>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Playing Games</li>
+            <li>Watching Movies</li>
+            <li>Learning New Technologies</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p><b>Email:</b> deepadhanush7@gmail.com</p>
+        <p><b>Mobile:</b> 9486707808</p>
+        <p><b>Location:</b> Erode, Tamil Nadu, India</p>
+    </section>
+
+</body>
+</html>
