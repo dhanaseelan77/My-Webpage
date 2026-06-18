@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prosperum Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+    background:#0f2347;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+.btn{
+    background:#c89b4d;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(15,35,71,0.85),
+    rgba(15,35,71,0.85)),
+    url('https://images.unsplash.com/photo-1460925895917-afdab827c52f');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:120px 8%;
+}
+
+.hero h1{
+    font-size:60px;
+    max-width:600px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:500px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+/* TOP CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:-50px;
+    padding:0 8%;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.small-btn{
+    background:#c89b4d;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+/* SOLUTIONS */
+.solutions{
+    padding:80px 8%;
+}
+
+.solutions h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.solution{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.solution img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h3{
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+/* HOW WE WORK */
+.work{
+    background:white;
+    padding:70px 8%;
+}
+
+.work h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.steps{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.step{
+    text-align:center;
+    max-width:250px;
+}
+
+.circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#c89b4d;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+/* CONSULTATION */
+.consult{
+    background:#0f2347;
+    color:white;
+    padding:70px 8%;
+}
+
+.consult-container{
+    display:flex;
+    gap:40px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.form{
+    flex:1;
+}
+
+.form input,
+.form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+.form button{
+    background:#c89b4d;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+footer{
+    background:#08162f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.consult-container{
+    flex-direction:column;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PROSPERUM</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button class="btn">Schedule Consultation</button>
+</header>
+
+<section class="hero">
+    <h1>Achieve Financial Success & Security</h1>
+
+    <p>
+        Expert financial planning and investment solutions
+        tailored for your future.
+    </p>
+
+    <button class="btn">Learn More</button>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>Wealth Building</h3>
+<p>Build long-term wealth through smart financial planning.</p>
+<button class="small-btn">Discover More</button>
+</div>
+
+<div class="card">
+<h3>Investment Growth</h3>
+<p>Grow your investments with expert guidance.</p>
+<button class="small-btn">Discover More</button>
+</div>
+
+<div class="card">
+<h3>Financial Protection</h3>
+<p>Secure your future and protect your assets.</p>
+<button class="small-btn">Discover More</button>
+</div>
+
+</section>
+
+<section class="solutions">
+
+<h2>Our Financial Solutions</h2>
+
+<div class="grid">
+
+<div class="solution">
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
+<div class="content">
+<h3>Retirement Planning</h3>
+<p>Plan today for a comfortable retirement tomorrow.</p>
+<button class="small-btn">Learn More</button>
+</div>
+</div>
+
+<div class="solution">
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3">
+<div class="content">
+<h3>Investment Management</h3>
+<p>Professional investment services for growth.</p>
+<button class="small-btn">Learn More</button>
+</div>
+</div>
+
+<div class="solution">
+<img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+<div class="content">
+<h3>Wealth Management</h3>
+<p>Comprehensive solutions for wealth creation.</p>
+<button class="small-btn">Learn More</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="work">
+
+<h2>How We Work</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="circle">1</div>
+<h3>Initial Consultation</h3>
+<p>Understand client goals.</p>
+</div>
+
+<div class="step">
+<div class="circle">2</div>
+<h3>Strategic Planning</h3>
+<p>Create financial roadmap.</p>
+</div>
+
+<div class="step">
+<div class="circle">3</div>
+<h3>Execution</h3>
+<p>Implement and monitor plans.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="consult">
+
+<div class="consult-container">
+
+<div>
+<h2>Schedule Your Free Consultation</h2>
+<p>Get expert financial advice and secure your future.</p>
+</div>
+
+<div class="form">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="text" placeholder="Phone">
+<textarea rows="5" placeholder="Message"></textarea>
+<button>Submit</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Prosperum Financial Solutions. All Rights Reserved.
+</footer>
+
+</body>
+</html>
