@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Intern Dashboard</title>
+<style>
+body{
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px auto;
+width:400px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+button{
+padding:10px 20px;
+background:#6a5acd;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.random{
+font-size:40px;
+color:purple;
+font-weight:bold;
+margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h1>📊 Internship Dashboard</h1>
+
+<div class="card">
+<h2> Condition Checker</h2>
+
+<input type="number" id="marks" placeholder="Enter Marks">
+
+<br><br>
+
+<button onclick="checkGrade()">Check</button>
+
+<h3 id="result"></h3>
+</div>
+
+<div class="card">
+<h2> Random Number Generator</h2>
+
+<button onclick="generateRandom()">Generate</button>
+
+<div id="random" class="random">0</div>
+</div>
+
+<script>
+function checkGrade(){
+
+let marks=document.getElementById("marks").value;
+let grade="";
+
+if(marks>=90)
+grade="Grade A";
+else if(marks>=75)
+grade="Grade B";
+else if(marks>=50)
+grade="Grade C";
+else
+grade="Fail";
+
+document.getElementById("result").innerHTML=grade;
+}
+
+function generateRandom(){
+let num=Math.floor(Math.random()*1000)+1;
+document.getElementById("random").innerHTML=num;
+}
+</script>
+
+</body>
+</html>
