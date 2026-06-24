@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Tasks</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align:center;
+        margin:20px;
+        transition:0.5s;
+    }
+
+    .container{
+        background:white;
+        padding:20px;
+        margin:20px auto;
+        width:80%;
+        border-radius:10px;
+        box-shadow:0 0 10px gray;
+    }
+
+    button{
+        padding:10px 15px;
+        margin:5px;
+        cursor:pointer;
+    }
+
+    input{
+        padding:8px;
+        margin:5px;
+    }
+
+    ul{
+        list-style-type:square;
+        text-align:left;
+        width:200px;
+        margin:auto;
+    }
+</style>
+</head>
+<body>
+
+<h1>JavaScript DOM Tasks</h1>
+
+<div class="container">
+    <h2>Background Color Changer</h2>
+    <button id="redBtn">Red</button>
+    <button id="blueBtn">Blue</button>
+    <button id="greenBtn">Green</button>
+</div>
+
+<div class="container">
+    <h2>Counter App</h2>
+    <h1 id="count">0</h1>
+
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <button id="reset">Reset</button>
+</div>
+
+<div class="container">
+    <h2>To-Do List</h2>
+
+    <input type="text" id="todoInput" placeholder="Enter task">
+    <button id="addTask">Add</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+<div class="container">
+    <h2>Show / Hide Password</h2>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <br><br>
+
+    <input type="checkbox" id="showPassword">
+    <label for="showPassword">Show Password</label>
+</div>
+
+<script>
+
+document.getElementById("redBtn").addEventListener("click", function(){
+    document.body.style.backgroundColor = "red";
+});
+
+document.getElementById("blueBtn").addEventListener("click", function(){
+    document.body.style.backgroundColor = "blue";
+});
+
+document.getElementById("greenBtn").addEventListener("click", function(){
+    document.body.style.backgroundColor = "green";
+});
+
+let count = 0;
+
+document.getElementById("increase").addEventListener("click", function(){
+    count++;
+    document.getElementById("count").textContent = count;
+});
+
+document.getElementById("decrease").addEventListener("click", function(){
+    count--;
+    document.getElementById("count").textContent = count;
+});
+
+document.getElementById("reset").addEventListener("click", function(){
+    count = 0;
+    document.getElementById("count").textContent = count;
+});
+
+document.getElementById("addTask").addEventListener("click", function(){
+
+    let taskText = document.getElementById("todoInput").value;
+
+    if(taskText !== ""){
+        let li = document.createElement("li");
+        li.textContent = taskText;
+
+        document.getElementById("taskList").appendChild(li);
+
+        document.getElementById("todoInput").value = "";
+    }
+});
+ Hide Password
+document.getElementById("showPassword").addEventListener("change", function(){
+
+    let passwordField = document.getElementById("password");
+
+    if(this.checked){
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+});
+
+</script>
+
+</body>
+</html>
